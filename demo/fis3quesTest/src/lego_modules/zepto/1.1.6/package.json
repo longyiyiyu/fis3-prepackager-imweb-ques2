@@ -1,0 +1,40 @@
+{
+  "name": "zepto",
+  "version": "1.1.6",
+  "homepage": "",
+  "scripts": {
+    "test": "coffee make test",
+    "dist": "coffee make dist",
+    "start": "coffee test/server.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://zeptojs.com/license/"
+  },
+  "devDependencies": {
+    "uglify-js": "2.4.x",
+    "express": "3.1.x",
+    "coffee-script": "1.5.x",
+    "shelljs": "0.1.x"
+  },
+  "description": "zepto",
+  "keywords": [],
+  "author": "herbertliu <herbertliuhb@gmail.com>",
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "lego": {
+    "category": "35",
+    "categoryName": "基础框架",
+    "main": "zepto.js",
+    "dependencies": {},
+    "devDependencies": {
+      "expect.js": "0.3.1"
+    }
+  }
+}

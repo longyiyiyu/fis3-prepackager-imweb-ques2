@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TodoMVC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- <link rel="stylesheet" href="./pages/todomvc.css"> -->
+<!--[if lt IE 9]>
+<script src="/libs/es5-shim.js"></script>
+<script src="/libs/html5shiv-printshiv.js"></script>
+<![endif]-->
+<style>
+.hide { display: none; }
+.q-mark { display: none; }
+</style>
+<!--STYLE_PLACEHOLDER-->
+</head>
+<body>
+<ui-nav></ui-nav>
+<ui-header>
+    <h1>Ques</h1>
+    <p>Road to the future.</p>
+</ui-header>
+<!-- 没有参数则认为是可以不用渲染，直接插入 -->
+<todoapp></todoapp>
+
+<!-- loader start -->
+<script src="libs/mod.js?__inline"></script>
+<script src="libs/mod.config.js?__inline"></script>
+<!-- loader end -->
+
+<!--RESOURCEMAP_PLACEHOLDER-->
+<!--SCRIPT_PLACEHOLDER-->
+<!-- <script src="./pages/todomvc/main"></script> -->
+<script>
+    // require('pages/index/main');
+    require.async(['pages/todomvc/main'], function(Main) {
+        Main.init();
+    });
+</script>
+</body>
+</html>

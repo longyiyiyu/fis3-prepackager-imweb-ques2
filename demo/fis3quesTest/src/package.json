@@ -1,0 +1,13 @@
+{
+  "name": "fis-mobile",
+  "version": "0.0.0-ignored",
+  "node_version": ">= 0.8.0",
+  "devDependencies": {},
+  "dependencies": {},
+  "lego": {
+    "dependencies": {
+      "zepto": "1.1.6",
+      "jquery": "2.1.4"
+    }
+  }
+}

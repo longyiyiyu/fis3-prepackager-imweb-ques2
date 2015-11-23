@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ques</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--STYLE_PLACEHOLDER-->
+</head>
+<body>
+    <ui-header>
+        <h1>Ques</h1>
+        <p>Road to the future.</p>
+    </ui-header>
+    <ttext id="test-1" text="Hello world!!!"></ttext>
+    <ttext id="test-2" text="I'm lqlongli."></ttext>
+    <ttext id="test-3" text="How do you do!"></ttext>
+    <ttext2 id="test-4" text="11122233"></ttext2>
+    <!-- <script src="./pages/todomvc/main"></script> -->
+
+    <!-- loader start -->
+    <script src="libs/mod.js?__inline"></script>
+    <script src="libs/mod.config.js?__inline"></script>
+    <!-- loader end -->
+
+    <!--RESOURCEMAP_PLACEHOLDER-->
+    <!--SCRIPT_PLACEHOLDER-->
+    <script>
+    // require('pages/index/main');
+    require.async(['pages/index2/main'], function(Main) {
+        Main.init();
+    });
+    </script>
+</body>
+</html>

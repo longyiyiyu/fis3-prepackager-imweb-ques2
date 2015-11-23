@@ -1,0 +1,31 @@
+{
+  "name": "fis-postprocessor-imweb-ques2",
+  "version": "0.0.1",
+  "description": "the second fis3 prepackager plugin for q components of imweb team",
+  "main": "index.js",
+  "keywords": [
+    "imweb",
+    "qjs",
+    "ques"
+  ],
+  "author": {
+    "name": "lqlongli"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/longyiyiyu/fis3-prepackager-imweb-ques2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/longyiyiyu/fis3-prepackager-imweb-ques2/issues"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "dom.tpl": "0.0.9",
+    "lodash": "*",
+    "set-component": "^1.0.0"
+  }
+}
