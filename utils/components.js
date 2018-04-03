@@ -103,6 +103,7 @@ function _makeFragment($, $ele, tpl, uid) {
         });
     }
 
+    if ($ele[0] && $ele[0].name) res.attr('q-cname', $ele[0].name);
     if (uid) res.addClass('component-' + uid);
     if (attrs.id) res.attr('id', attrs.id);
     if (attrs.class) res.addClass(attrs.class);

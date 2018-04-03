@@ -54,9 +54,9 @@ var entry = module.exports = function(ret, conf, settings, opt) {
             if (f) {
                 f.setContent(u.fix(f.getContent(), name, settings));
                 // 添加deps, 这里的依赖fis3无法自动计算出来
-                htmlList.forEach(function(file){
-                    file.cache.addDeps(f.realpath);
-                });
++                htmlList.forEach(function(file){
++                    file.cache.addDeps(f.realpath);
++                });
             }
             f = ret.src[comp.css];
             if (f) {
