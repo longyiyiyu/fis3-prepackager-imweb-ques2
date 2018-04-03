@@ -38,10 +38,12 @@ var entry = module.exports = function(ret, conf, settings, opt) {
 
     // console.log(settings, getComp('todoapp', settings.components));
     // html
+    var htmlList = [];
     fis.util.map(ret.src, function(subpath, file) {
         if (file.isHtmlLike && (file.isQPage || hasQMark(file, settings))) {
             var page = new Page(file.getContent(), file, ret, settings);
             file.setContent(page.html());
+            htmlList.push(file);
         }
     });
 
@@ -51,6 +53,10 @@ var entry = module.exports = function(ret, conf, settings, opt) {
             f = ret.src[comp.html];
             if (f) {
                 f.setContent(u.fix(f.getContent(), name, settings));
+                // 添加deps, 这里的依赖fis3无法自动计算出来
+                htmlList.forEach(function(file){
+                    file.cache.addDeps(f.realpath);
+                });
             }
             f = ret.src[comp.css];
             if (f) {
